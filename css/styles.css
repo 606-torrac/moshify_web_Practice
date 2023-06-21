@@ -24,6 +24,10 @@ html {
     font-size: 62.5%;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--color-body);
@@ -206,7 +210,6 @@ a {
 /*- Buttons */
 
 .btn {
-    background: dodgerblue;
     border-radius: 40px;
     border: none;
     cursor: pointer;
@@ -214,7 +217,7 @@ a {
     font-weight: 700;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -236,7 +239,7 @@ a {
 
 .btn--primary1 {
     background: #fff;
-    border: 1px solid var(var(--color-headings));
+    border: 1px solid var(--color-headings);
     border: 2px solid var(--color-headings);
     color: var(--color-headings);
 }
@@ -315,6 +318,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -523,7 +527,7 @@ a {
 @media screen and (min-width: 1024px) {
     .grid--1x3 {
         grid-template-columns: repeat(3, 1fr)
-    };
+    }
 }
 
 /* Testimonial */
@@ -780,8 +784,9 @@ a {
 }
 
 .block__domain-prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -822,19 +827,11 @@ a {
     margin: 1rem 0;
 }
 
-.feature__image {
-    width: 100%;
-}
-
-.grid.feature > picture {
-    align-self: center;
-};
-
 @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content {
-        order: 2;
+      order: 2;
     }
-}
+  }
 
 /* Showcase */
 
